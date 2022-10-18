@@ -6,6 +6,8 @@ import com.cloudmersive.client.rt.model.*;
 import com.cloudmersive.client.rt.*;
 import java.io.*;
 
+import org.springframework.core.io.ByteArrayResource;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -25,7 +27,9 @@ public class Main {
         //Apikey.setApiKeyPrefix("Token");
 
         ScanApi apiInstance = new ScanApi(defaultClient);
-        File inputFile = new File("/path/to/file"); // File | Input file to perform the operation on.
+        
+        ByteArrayResource inputFile = new ByteArrayResource(new byte[100]);
+
         Boolean allowExecutables = true; // Boolean | Set to false to block executable files (program code) from being allowed in the input file.  Default is false (recommended).
         Boolean allowInvalidFiles = true; // Boolean | Set to false to block invalid files, such as a PDF file that is not really a valid PDF file, or a Word Document that is not a valid Word Document.  Default is false (recommended).
         Boolean allowScripts = true; // Boolean | Set to false to block script files, such as a PHP files, Python scripts, and other malicious content or security threats that can be embedded in the file.  Set to true to allow these file types.  Default is false (recommended).
