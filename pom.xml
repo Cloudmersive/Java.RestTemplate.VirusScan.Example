@@ -16,11 +16,11 @@
     </repositories>
 
     <dependencies>
-        <dependency>
-            <groupId>com.github.Cloudmersive</groupId>
-            <artifactId>Cloudmersive.APIClient.Java</artifactId>
-            <version>v3.79</version>
-        </dependency>
+	<dependency>
+	    <groupId>com.github.Cloudmersive</groupId>
+	    <artifactId>Cloudmersive.APIClient.Java.RestTemplate</artifactId>
+	    <version>v4.1.1</version>
+	</dependency>
     </dependencies>
     
 </project>
