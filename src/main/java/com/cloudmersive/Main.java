@@ -2,7 +2,7 @@ package com.cloudmersive;
 
 import com.cloudmersive.client.rt.invoker.*;
 import com.cloudmersive.client.rt.invoker.auth.*;
-import com.cloudmersive.client.rt.invoker.models.*;
+import com.cloudmersive.client.rt.model.*;
 import com.cloudmersive.client.rt.*;
 
 public class Main {
