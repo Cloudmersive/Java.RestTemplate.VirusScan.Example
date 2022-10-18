@@ -14,7 +14,7 @@ public class Main {
 
         try
         {
-            ApiClient defaultClient = Configuration.getDefaultApiClient();
+            ApiClient defaultClient = new ApiClient();
         defaultClient.setBasePath("https://api.cloudmersive.com");
         
         // Configure API key authorization: Apikey
