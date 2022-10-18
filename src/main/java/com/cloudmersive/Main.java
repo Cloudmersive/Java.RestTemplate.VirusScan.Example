@@ -38,11 +38,7 @@ public class Main {
         try {
             VirusScanAdvancedResult result = apiInstance.scanFileAdvanced(inputFile, allowExecutables, allowInvalidFiles, allowScripts, allowPasswordProtectedFiles, allowMacros, allowXmlExternalEntities, allowInsecureDeserialization, allowHtml, restrictFileTypes);
             System.out.println(result);
-        } catch (ApiException e) {
-            System.err.println("Exception when calling ScanApi#scanFileAdvanced");
-            System.err.println("Status code: " + e.getCode());
-            System.err.println("Reason: " + e.getResponseBody());
-            System.err.println("Response headers: " + e.getResponseHeaders());
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
